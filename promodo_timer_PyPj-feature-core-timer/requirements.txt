@@ -1,0 +1,5 @@
+customtkinter>=5.2.0
+pygame-ce>=2.5.0  # pygame-ce dùng thay pygame gốc, hỗ trợ Python 3.12+
+plyer>=2.1.0
+pytest>=7.4.0
+pytest-cov>=4.1.0

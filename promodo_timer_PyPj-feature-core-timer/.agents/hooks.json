@@ -1,0 +1,22 @@
+{
+  "hooks": [
+    {
+      "event": "conversation_start",
+      "description": "Auto-setup: activate venv and pull latest code from GitHub at the start of every session.",
+      "commands": [
+        {
+          "command": ".venv\\Scripts\\Activate.ps1",
+          "shell": "powershell",
+          "description": "Activate Python virtual environment",
+          "ignore_errors": true
+        },
+        {
+          "command": "git pull origin main",
+          "shell": "powershell",
+          "description": "Pull latest code from GitHub",
+          "ignore_errors": true
+        }
+      ]
+    }
+  ]
+}
